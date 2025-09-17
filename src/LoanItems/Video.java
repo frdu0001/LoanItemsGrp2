@@ -30,6 +30,6 @@ class Video extends Items {
 
     @Override
     public String toString() {
-        return "Title: " + title + "\nType: " + type + "\n";
+        return type + "     " + title + "\n";
     }
 }
