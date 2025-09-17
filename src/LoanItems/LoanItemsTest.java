@@ -30,7 +30,7 @@ public class LoanItemsTest {
             if (type.equalsIgnoreCase("book")) {
             } else if (type.equalsIgnoreCase("video")) {
             } else {
-                System.out.println("Unknown entity! This library only handles books and videos.");
+                System.out.println("Unknown entity! This library only handles books and videos.\nPlease try again!");
                 type = scanner.nextLine();
             }
 
