@@ -6,16 +6,16 @@ public class LoanItemsTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Velkomstbesked og spørger hvor mange item der skal indleveres
-        System.out.println("Velkommen til Professorens Biblotek!" + "\n-----------");
+        // Velkomstbesked og spørger hvor mange genstande der skal lånes
+        System.out.println("Velkommen til Professorens Bibliotek!" + "\n-----------");
         System.out.println("Hvor mange ting vil du låne?");
         int numberOfItems = scanner.nextInt();
         scanner.nextLine();
 
-        // Opretter et array til at holde dyrene
+        // Opretter et array til at holder lånte genstande
         Items[] item = new Items[numberOfItems];
 
-        // Spørger om data på hvert item og gemmer dem i arrayet
+        // Spørger om data på hver genstand og gemmer dem i arrayet
         for (int i = 0; i < numberOfItems; i++) {
             System.out.print("Hvilken type genstand ønsker du at låne? \n");
             String type = scanner.nextLine();
