@@ -1,9 +1,9 @@
 package LoanItems;
 
 //Subclass
-class video extends Items {
+class Video extends Items {
 
-    public video(String title, String type) {
+    public Video(String Title, String Type) {
         super(title, type);
     }
 

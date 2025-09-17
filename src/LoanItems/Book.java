@@ -2,9 +2,9 @@ package LoanItems;
 
 
 //Subclass
-class book extends Items {
+class Book extends Items {
 
-    public book(String title, String type) {
+    public Book(String Title, String Type) {
         super(title, type);
     }
 
