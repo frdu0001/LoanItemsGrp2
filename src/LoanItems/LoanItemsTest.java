@@ -20,7 +20,7 @@ public class LoanItemsTest {
             System.out.print("Hvilken type genstand ønsker du at låne? \n");
             String type = scanner.nextLine();
 
-            System.out.print("Hvad er navnet på dyret? \n");
+            System.out.print("Hvad er navnet på bogen eller videoen? \n");
             String title = scanner.nextLine();
 
             // Opretter det rigtige dyr baseret på typen
