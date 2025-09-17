@@ -3,7 +3,7 @@ package LoanItems;
 //Subclass
 class Video extends Items {
 
-    public Video(String Title, String Type) {
+    public Video(String title, String type) {
         super(title, type);
     }
 
