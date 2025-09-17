@@ -39,9 +39,9 @@ public class LoanItemsTest {
 
             // Creates the right items based on the type
             if (type.equalsIgnoreCase("Book")) {
-                item[i] = new Book(title, type);
+                item[i] = new Book(type, title);
             } else if (type.equalsIgnoreCase("Video")) {
-                item[i] = new Video(title, type);
+                item[i] = new Video(type, title);
             } else {
                 System.out.println("Unknown entity! This library only handles books and videos.");
             }
@@ -53,7 +53,7 @@ public class LoanItemsTest {
         // Prints all the items for rent - It counts up the ID for each item.
         System.out.println("LIST OF RENTED ITEMS: \n" + "-----------------\n" + "ID\tTYPE\tTITLE");
         for (int i = 0; i < numberOfItems; i++) {
-            System.out.println((i + 1) + " " + item[i] + "\n");
+            System.out.println((i + 1) + " " + item[i]);
         }
     }
 }
