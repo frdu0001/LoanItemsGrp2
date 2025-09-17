@@ -9,22 +9,20 @@ class book extends Items {
     }
 
     //Getters
-
-    public String getTitle (){
+    public String getTitle(){
         return title;
     }
 
-    public String getType (){
+    public String getType(){
         return type;
     }
 
     //Setters
-
-    public String setType (){
+    public String setType(){
         return type;
     }
 
-    public String setType (){
+    public String setType(){
         return type;
     }
 
