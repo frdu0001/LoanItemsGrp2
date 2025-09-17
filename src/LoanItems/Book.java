@@ -1,4 +1,4 @@
 package LoanItems;
 
-public class Books {
+public class Book {
 }
