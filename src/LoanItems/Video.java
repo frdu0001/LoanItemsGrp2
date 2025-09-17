@@ -30,6 +30,6 @@ class Video extends Items {
 
     @Override
     public String toString() {
-        return type + "\uD83D\uDCFC" + "     " + title + "\n";
+        return type + "\uD83D\uDCFC" + "     " + title;
     }
 }
