@@ -51,9 +51,9 @@ public class LoanItemsTest {
         scanner.close();
 
         // Prints all the items for rent - It counts up the ID for each item.
-        System.out.println("LIST OF RENTED ITEMS: \n" + "-----------------\n" + "ID\tTYPE\tTITLE");
+        System.out.println("LIST OF RENTED ITEMS: \n" + "-----------------------------------------\n" + "ID\tTYPE\tTITLE");
         for (int i = 0; i < numberOfItems; i++) {
-            System.out.println((i + 1) + " " + item[i]);
+            System.out.println((i + 1) + "\t" + item[i]);
         }
     }
 }

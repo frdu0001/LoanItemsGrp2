@@ -29,6 +29,6 @@ class Book extends Items {
 
     @Override
     public String toString() {
-        return type + "\uD83D\uDCD6" + "     " + title;
+        return type + "\uD83D\uDCD6" + "\t" + title;
     }
 }
