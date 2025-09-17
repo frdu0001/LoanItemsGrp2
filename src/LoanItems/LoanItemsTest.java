@@ -23,7 +23,7 @@ public class LoanItemsTest {
             System.out.print("Hvad er navnet på bogen eller videoen? \n");
             String title = scanner.nextLine();
 
-            // Opretter det rigtige dyr baseret på typen
+            // Opretter den rigtige genstand baseret på typen
             if (type.equalsIgnoreCase("Book")) {
                 item[i] = new Book(title, type);
             } else if (type.equalsIgnoreCase("Video")) {
@@ -37,7 +37,7 @@ public class LoanItemsTest {
         System.out.println("Tak for at låne hos os! Her er en oversigt over de bøger/videoer du har lånt :\n");
         scanner.close();
 
-        // Printer alle dyr som er indleveret - Her tæller den en op for hvert dyr.
+        // Printer alle genstande som er lånt - Her tæller den en op på ID'et for hver genstand.
         System.out.println("LIST OF LOANED ITEMS: \n" + "-----------------");
         for (int i = 0; i < numberOfItems; i++) {
             System.out.println("Registreret genstand nr: " + (i + 1) + "\n" + item[i] + "\n");
