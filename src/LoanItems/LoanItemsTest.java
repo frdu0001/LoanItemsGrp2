@@ -7,20 +7,33 @@ public class LoanItemsTest {
         Scanner scanner = new Scanner(System.in);
 
         // Velkomstbesked og spørger hvor mange genstande der skal lånes
-        System.out.println("Velkommen til Professorens Bibliotek!" + "\n-----------");
-        System.out.println("Hvor mange ting vil du låne?");
+        System.out.println("Welcome to the Professors Library!" + "\n-----------");
+        System.out.println("How many items would you like to rent?");
         int numberOfItems = scanner.nextInt();
         scanner.nextLine();
+
+        // Checks input for a positive number
+        while (numberOfItems <= 0) {
+            System.out.println("Please only input a postive number. How would you rent -5 books?");
+            numberOfItems = scanner.nextInt();
+        }
 
         // Opretter et array til at holder lånte genstande
         Items[] item = new Items[numberOfItems];
 
         // Spørger om data på hver genstand og gemmer dem i arrayet
         for (int i = 0; i < numberOfItems; i++) {
-            System.out.print("Hvilken type genstand ønsker du at låne? \n");
+            System.out.print("What type is the items of your choise?\n");
             String type = scanner.nextLine();
 
-            System.out.print("Hvad er navnet på bogen eller videoen? \n");
+            // || !type.equals("Book") || !type.equals("video") || !type.equals("Video")
+
+            while (!type.equalsIgnoreCase("book")) {
+                System.out.println("Unknown entity! This library only has books or videos.");
+                type = scanner.nextLine();
+            }
+
+            System.out.print("What is the name of the book or video?\n");
             String title = scanner.nextLine();
 
             // Opretter den rigtige genstand baseret på typen
@@ -29,8 +42,9 @@ public class LoanItemsTest {
             } else if (type.equalsIgnoreCase("Video")) {
                 item[i] = new Video(title, type);
             } else {
-                System.out.println("Ukendt genstand. Registrerer som ny type.");
-                item[i] = new Items(title, type);
+                System.out.println("Unknown entity! This library only has books or videos.");
+
+                //item[i] = new Items(title, type);
             }
         }
 
