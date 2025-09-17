@@ -4,7 +4,7 @@ package LoanItems;
 //Subclass
 class Book extends Items {
 
-    public Book(String Title, String Type) {
+    public Book(String title, String type) {
         super(title, type);
     }
 
