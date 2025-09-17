@@ -22,8 +22,8 @@ class Book extends Items {
         return type;
     }
 
-    public String setType(){
-        return type;
+    public String setTitle(){
+        return title;
     }
 
 
